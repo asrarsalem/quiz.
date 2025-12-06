@@ -123,22 +123,97 @@ body{
   </div>
 
   <!-- CERTIFICATE -->
-  <div id="certWrap" class="certWrap">
-    <div class="certCard">
-      <!-- certificate design as simple SVG-like presentation (text over gradient) -->
-      <div style="padding:18px;">
-        <div class="certTitle">شهادة تفوّق</div>
-        <div style="margin-top:6px">نبارك للطالبة</div>
-        <div id="certName" class="certName">—</div>
-        <div id="certScore" class="certScore">—</div>
-        <div style="margin-top:12px; font-size:15px; color:#345">عمل مميّز في درس مصادر الطاقة</div>
-      </div>
+<div id="certWrap" class="certWrap">
+  <div class="certCard" style="
+    background: linear-gradient(180deg,#fff,#fdf8e7);
+    padding: 30px;
+    border-radius: 18px;
+    border: 3px solid #f4d78b;
+    box-shadow: 0 8px 26px rgba(0,0,0,0.08);
+    text-align: center;
+    position: relative;
+  ">
+    
+    <!-- شريط ذهبي علوي -->
+    <div style="
+      height: 10px;
+      background: linear-gradient(90deg,#f7d57c,#fce6b1,#f7d57c);
+      border-radius: 6px;
+      margin-bottom: 20px;
+    "></div>
+
+    <h1 style="font-size: 34px; color:#b8860b; margin: 10px 0; font-weight: 800;">
+      شهادة تفوّق
+    </h1>
+
+    <p style="font-size: 18px; color:#444; margin-top: 4px;">
+      ميارك للطالبة المتفوقة:
+    </p>
+
+    <div id="certName" style="
+      font-size: 28px; 
+      font-weight: 900; 
+      color:#2c3e50;
+      margin: 12px 0;
+    ">—</div>
+
+    <div id="certScore" style="
+      font-size: 22px;
+      font-weight: 600;
+      color:#3c5a77;
+      margin-top: 6px;
+    ">—</div>
+
+    <p style="margin-top: 14px; color:#5b5b5b; font-size: 16px;">
+      نظير تميّزك في التقويم الختامي لدرس <strong>مصادر الطاقة</strong>
+    </p>
+
+    <!-- 📌 الختم الذهبي -->
+    <div style="
+      margin: 28px auto 0;
+      width: 140px;
+      height: 140px;
+      background: radial-gradient(circle at 30% 30%, #fff8d8, #f1c04b, #d19a1e);
+      border-radius: 50%;
+      position: relative;
+      box-shadow: 0 0 18px rgba(212,164,44,0.6), inset 0 0 10px rgba(0,0,0,0.25);
+    ">
+      <!-- نجمة داخلية -->
+      <div style="
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%) rotate(10deg);
+        font-size: 60px;
+        color: rgba(255,255,255,0.95);
+        text-shadow: 0 0 6px rgba(0,0,0,0.25);
+      ">⭐</div>
+
+      <!-- دائرة صغيرة داخلية -->
+      <div style="
+        position: absolute;
+        top: 50%; left: 50%;
+        transform: translate(-50%, -50%);
+        width: 90px; height: 90px;
+        border-radius: 50%;
+        background: radial-gradient(circle, #ffeeb1, #d3a337);
+        opacity: 0.4;
+      "></div>
     </div>
-    <div style="margin-top:12px; text-align:center;">
-      <button class="btn" onclick="printCertificate()">🖨️ طباعة الشهادة / حفظ كـ PDF</button>
-      <!-- no restart button as requested -->
-    </div>
+
+    <!-- شريط ذهبي سفلي -->
+    <div style="
+      height: 10px;
+      background: linear-gradient(90deg,#f7d57c,#fce6b1,#f7d57c);
+      border-radius: 6px;
+      margin-top: 20px;
+    "></div>
+
   </div>
+
+  <div style="margin-top: 15px; text-align:center;">
+    <button class="btn" onclick="printCertificate()">🖨️ طباعة الشهادة / حفظ كـ PDF</button>
+  </div>
+</div>
 
 <div class="footer">برمجة تعليمية تفاعلية صُممت خصيصاً لدعم درس مصادر الطاقة</div>
 </div>
